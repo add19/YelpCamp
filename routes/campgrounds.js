@@ -22,8 +22,8 @@ var upload = multer({storage: storage, filter: imageFilter})
 var cloudinary = require('cloudinary');
 cloudinary.config({
    cloud_name: 'dfxj4outa',
-   api_key   : 453999375899534,
-   api_secret:  'qr7Q7uznxn3C0tXfx1aG6InsgtY'
+   api_key   : tu_tera_dekh,
+   api_secret:  'Tu_tera_dekh'
    
 });
 
