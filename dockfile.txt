@@ -1,0 +1,8 @@
+FROM i386/ubuntu
+RUN echo "Asia/Kolkata" | tee /etc/timezone
+RUN export DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y tzdata
+RUN apt install -y apache2
+RUN apt install -y php
+COPY src/  /var/www/html/
+EXPOSE 80
